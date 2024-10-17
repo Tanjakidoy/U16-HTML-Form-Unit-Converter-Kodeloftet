@@ -10,19 +10,46 @@
 
   
   <body>
-
-<!-- 
-      Unit Converter
-      - Et input felt
-      - Konventerings meny fra
-      - Konventerings meny til
-      - Paragraf som viser resultat
-    -->
   
   <form action="" class="form">
     <!-- <form>: Defines a form element where users can input values for conversion.-->
     <!-- action="": No form submission to a server is specified here, so this is likely handled by JavaScript.-->
     <!--class="form": The form is styled using this CSS class.-->
-    
+  <label for="unitInput"> 
+    <!-- <label>: Provides a label for the input field. -->
+  <input type="number" name="unitInput" id="unitInput" placeholder="Skriv inn en tall verdi">
+    <!-- <input type="number">: This input field allows the user to enter a number -->
+    <!-- placeholder="Skriv inn en tall verdi": A placeholder text inside the input field that disappears when the user starts typing. -->
+  </label>
+
+  <label for="unitFrom">
+    <!-- <label>: selects the unit they are converting from -->
+  <select name="unitFrom" id="unitFrom">
+    <option value="MM">MM</option>
+    <option value="CM">CM</option>
+    <option value="M">M</option>
+    <option value="KM">KM</option>
+  </select>
+</label>
+
+<label for="unitTo">
+  <!-- <label>: selects the unit they are converting to -->
+   <select name="unitTo" id="unitTo">
+    <option value="MM">MM</option>
+    <option value="CM">CM</option>
+    <option value="M">M</option>
+    <option value="KM">KM</option>
+  </select>
+</label>
+
+<button id="convertButton">Konventer</button>
+<!-- When clicked, it likely triggers a JavaScript function that performs the conversion. -->
+</label>
+
+<p id="displayResult"></p>
+<!-- <p>: A paragraph with the ID displayResult, used to display the conversion result dynamically. It is currently empty and will be filled in by JavaScript when the conversion is complete. -->
+
+</form>
+
   </body>
 </html>
